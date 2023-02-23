@@ -1,6 +1,9 @@
 var persona
-var maquina
 var resultado
+
+const nombre = ["piedra", "papel", "tijera"];
+var maquina = nombre[Math.floor(Math.random() * nombre.length)];
+console.log("La maquina escogio: "+ maquina);
 
 if (((persona=="piedra")&&(maquina=="tijera")) || ((persona=="papel")&&(maquina=="piedra")) || ((persona=="tijera")&&(maquina=="papel"))) {
     resultado="Felicidades! Ganaste"
