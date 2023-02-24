@@ -1,5 +1,9 @@
-var persona
+var persona = document.querySelector('input');
 var resultado
+
+
+
+
 
 const nombre = ["piedra", "papel", "tijera"];
 var maquina = nombre[Math.floor(Math.random() * nombre.length)];
