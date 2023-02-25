@@ -11,20 +11,20 @@
     <div class="contenedor">
         <div class="imagen"></div>
         
-        <form action="" method="get">
-            <label for="juego">Escoge:</label>
-            <input list="juego" name="persona" id="persona">
-            <datalist id="juego">
-              <option value="Piedra">
-              <option value="Papel">
-              <option value="Tijera">
-            </datalist>
-            <input type="submit">
-          </form>
-        <div class="resultado">
-          <script src="ppt.js"></script>
-          
-        </div>
+        <form action="" method="get" id="form">
+          <label for="juego">Escoge:</label>
+          <select name="PPT" id="PPT">
+            <option value="0">Piedra</option>
+            <option value="1">Papel</option>
+            <option value="2">Tijera</option>
+          </select>
+          <input type="submit" id="input-submit">
+        </form>
+      <div style="text-align: center;">
+        <h2 id="machineSelection"></h2>
+        <h2 id="result"></h2>
+      </div>
     </div>
-</body>
+    <script src="ppt.js"></script>          
+  </body>
 </html>
